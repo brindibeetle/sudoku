@@ -1,4 +1,4 @@
-package brindi.beetle.Sudoku;
+package brindi.beetle.sudoku;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,12 +24,20 @@ public class SudokuFormRow extends HorizontalLayout {
 		
 	}
 	
-	public String getValue() {
+	public String getNumbers() {
 		StringBuffer sb = new StringBuffer();
 		for (SudokuFormField sudokuFormField : sudokuFormFields) {
 			sb.append(sudokuFormField.getValue());
 		}
 		return sb.toString();
+	}
+	public void setNumbers(String numbers) {
+		int offset = 0;
+		for (SudokuFormField sudokuFormField : sudokuFormFields) {
+			String c = numbers.substring(offset, offset + 1);
+			sudokuFormField.setNumber(c);
+			offset ++;
+		}
 	}
 	
 	

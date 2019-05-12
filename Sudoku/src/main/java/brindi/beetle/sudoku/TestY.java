@@ -1,4 +1,4 @@
-package brindi.beetle.Sudoku;
+package brindi.beetle.sudoku;
 
 import com.vaadin.flow.component.HasSize;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -14,14 +14,16 @@ public class TestY extends VerticalLayout implements HasSize {
 	public TestY() {
 		
 		getElement().getStyle().set("height","100%");
-		Sudoku sudoku = new Sudoku();
-		add(sudoku);
-		sudoku.getElement().getStyle()
+		SudokuForm sudokuForm = new SudokuForm();
+		add(sudokuForm);
+		sudokuForm.getElement().getStyle()
 		.set("display", "block")
 		.set("width", "10%")
 		.set("margin", "auto")
 		.set("height", "10%")
 		;
+		sudokuForm.setNumbers("123456789");
+		
 		
 //		setHorizontalComponentAlignment(Alignment.CENTER, sudoku);
 	}

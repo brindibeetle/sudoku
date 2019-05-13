@@ -35,7 +35,7 @@ public class SudokuForm extends VerticalLayout implements HasSize {
 			sudokuFormRows.add(sudokuFormRow);
 		}
 		
-		HorizontalLayout hl = new HorizontalLayout();
+		HorizontalLayout hl =  new HorizontalLayout();
 		
 		Button saveButton = new Button("Save");
 		saveButton.addClickListener(this::save);

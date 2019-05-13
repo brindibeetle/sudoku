@@ -17,8 +17,8 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 public class SudokuForm extends VerticalLayout implements HasSize {
 
 	public static final String TITLE = "Sudoku";
-	public static final int number_of_rows = 3;
-	public static final int number_of_columns = 3;
+	public static final int number_of_rows = 9;
+	public static final int number_of_columns = 9;
 	private List<SudokuFormRow> sudokuFormRows;
 	
 	public SudokuForm() {

@@ -18,11 +18,11 @@ public class TestY extends VerticalLayout implements HasSize {
 		add(sudokuForm);
 		sudokuForm.getElement().getStyle()
 		.set("display", "block")
-		.set("width", "10%")
+		.set("width", "1%")
 		.set("margin", "auto")
-		.set("height", "10%")
+		.set("height", "1%")
 		;
-		sudokuForm.setNumbers("123456789");
+		sudokuForm.setNumbers("123456789123456789123456789123456789123456789123456789123456789123456789123456789");
 		
 		
 //		setHorizontalComponentAlignment(Alignment.CENTER, sudoku);

@@ -12,7 +12,7 @@ public class SudokuFormRow extends HorizontalLayout {
 
 	public SudokuFormRow() {
 		sudokuFormFields = new ArrayList<>();
-		for (int column = 1; column <= 3; column++) {
+		for (int column = 1; column <= SudokuForm.number_of_columns; column++) {
 			SudokuFormField sudokuFormField =new SudokuFormField();
 			sudokuFormFields.add(sudokuFormField);
 			add(sudokuFormField);
